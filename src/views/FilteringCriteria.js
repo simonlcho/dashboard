@@ -168,11 +168,11 @@ const useStyles = makeStyles((theme) => ({
                   onChange={handleFieldChange}
                   label="Department"
                 >
-                  <MenuItem value={1}>SI Civil</MenuItem>
-                  <MenuItem value={2}>SI Elect</MenuItem>
-                  <MenuItem value={3}>SI MASS (MECH)</MenuItem>
-                  <MenuItem value={4}>SI MASS (SS)</MenuItem>
-                  <MenuItem value={5}>VI Civil</MenuItem>                                    
+                  <MenuItem value={1}>Department 1</MenuItem>
+                  <MenuItem value={2}>Department 2</MenuItem>
+                  <MenuItem value={3}>Department 3</MenuItem>
+                  <MenuItem value={4}>Department 4</MenuItem>
+                  <MenuItem value={5}>Department 5</MenuItem>                                    
                 </Select>
               </FormControl>
               </Grid>
@@ -233,7 +233,7 @@ const useStyles = makeStyles((theme) => ({
               <Button 
                 variant="contained"
                 onClick={handleGenerateGanttChart.bind(this)}
-                className={classes.buttonstyle}                      
+                className={classes.buttonstyle}              
               >
                 Generate Gantt Chart
               </Button>

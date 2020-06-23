@@ -101,7 +101,7 @@ export default function Header(props) {
             {/* {props.showDrawer ? drawer : null} */}
 
             <Typography variant="h6" noWrap>
-              BC Hydro - Construction Services Tracker
+              Sample Dashboard
             </Typography>  
             {/* {tabs}            */}
           </Toolbar>

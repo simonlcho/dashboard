@@ -23,7 +23,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/dashboard">
           <Switch>
             <Route exact path="/" component={() => 
               <React.Fragment>

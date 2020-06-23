@@ -7,7 +7,7 @@ export default function HeatmapComponent() {
     const [data, setData] = useState(
       [
         {
-          "department": "LM Civil",
+          "department": "Department 1",
           "2019-03": 39,
           "2019-03Color": "hsl(63, 70%, 50%)",
           "2019-04": 70,
@@ -32,7 +32,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(263, 70%, 50%)"
         },
         {
-          "department": "LM Elect1",
+          "department": "Department 2",
           "2019-03": 15,
           "2019-03Color": "hsl(210, 70%, 50%)",
           "2019-04": 77,
@@ -57,7 +57,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(323, 70%, 50%)"
         },
         {
-          "department": "LM Elect2",
+          "department": "Department 3",
           "2019-03": 72,
           "2019-03Color": "hsl(221, 70%, 50%)",
           "2019-04": 73,
@@ -82,7 +82,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(203, 70%, 50%)"
         },
         {
-          "department": "LM Field Mech",
+          "department": "Department 4",
           "2019-03": 65,
           "2019-03Color": "hsl(94, 70%, 50%)",
           "2019-04": 70,
@@ -107,7 +107,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(136, 70%, 50%)"
         },
         {
-          "department": "LM Line",
+          "department": "Department 5",
           "2019-03": 28,
           "2019-03Color": "hsl(48, 70%, 50%)",
           "2019-04": 4,
@@ -132,7 +132,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(206, 70%, 50%)"
         },
         {
-          "department": "LM Winders",
+          "department": "Department 6",
           "2019-03": 48,
           "2019-03Color": "hsl(222, 70%, 50%)",
           "2019-04": 62,
@@ -157,7 +157,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(66, 70%, 50%)"
         },
         {
-          "department": "NI Civil",
+          "department": "Department 7",
           "2019-03": 42,
           "2019-03Color": "hsl(56, 70%, 50%)",
           "2019-04": 95,
@@ -182,7 +182,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(348, 70%, 50%)"
         },
         {
-          "department": "NI Elect",
+          "department": "Department 8",
           "2019-03": 13,
           "2019-03Color": "hsl(157, 70%, 50%)",
           "2019-04": 27,
@@ -207,7 +207,7 @@ export default function HeatmapComponent() {
           "2020-01Color": "hsl(55, 70%, 50%)"
         },
         {
-          "department": "NI Line",
+          "department": "Department 9",
           "2019-03": 25,
           "2019-03Color": "hsl(239, 70%, 50%)",
           "2019-04": 45,

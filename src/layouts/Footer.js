@@ -30,7 +30,7 @@ export default function Footer(props) {
             <div className={classes.footer}>
                 <Divider />     
                 <div className={classes.footerText}>
-                    Construction Services Tracker
+                    Sample Dashboard
                 </div>             
             </div>
         </footer>

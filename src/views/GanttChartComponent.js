@@ -10,53 +10,59 @@ export default function GanttChartComponent() {
           "project": "Project 1",
           "start": 109,
           "startColor":"#FFFFFF00",
-          "period1": 142,
-          "period1Color": "#D51F06",
+          "numberofdays": 142,
+          "numberofdaysColor": "#D51F06",
         },
         {
           "project": "Project 2",
           "start": 186,
           "startColor":"#FFFFFF00",
-          "period1": 113,
-          "period1Color": "#D51F06",
+          "numberofdays": 113,
+          "numberofdaysColor": "#D51F06",
         },
         {
           "project": "Project 3",
           "start": 66,
           "startColor":"#FFFFFF00",
-          "period1": 45,
-          "period1Color": "#D51F06",
+          "numberofdays": 45,
+          "numberofdaysColor": "#D51F06",
         },
         {
           "project": "Project 4",
           "start": 196,
           "startColor":"#FFFFFF00",
-          "period1": 189,
-          "period1Color": "#D51F06",
+          "numberofdays": 189,
+          "numberofdaysColor": "#D51F06",
         },
         {
           "project": "Project 5",
           "start": 40,
           "startColor":"#FFFFFF00",
-          "period1": 141,
-          "period1Color": "#D51F06",
+          "numberofdays": 141,
+          "numberofdaysColor": "#D51F06",
         },
         {
           "project": "Project 6",
           "start": 49,
           "startColor":"#FFFFFF00",
-          "period1": 89,
-          "period1Color": "#D51F06",
+          "numberofdays": 89,
+          "numberofdaysColor": "#D51F06",
         }
       ]
     );
 
     let startDate = new Date(2019,2,1)
 
-    const getDateScale = (d) => {
+    const addToStartDate = (d) => {
       let startDate1 = new Date(startDate)      
       startDate1.setDate(startDate1.getDate() + d)      
-      return startDate1.toISOString().split('T')[0]
+      startDate1 = startDate1.toISOString().split('T')[0] 
+      return startDate1
+    }      
+
+    const getDateScale = (d) => {
+      let startDate1 = addToStartDate(d)
+      return startDate1.substring(0, startDate1.length - 0)
     }
 
     return (
@@ -67,7 +73,7 @@ export default function GanttChartComponent() {
           >
           <ResponsiveBar
                   data={data}
-                  keys={['start', 'period1']}
+                  keys={['start', 'numberofdays']}
                   indexBy="project"
                   margin={{ top: 40, right: 0, bottom: 0, left: 60 }}
                   padding={0.3}
@@ -103,6 +109,13 @@ export default function GanttChartComponent() {
                   labelSkipWidth={12}
                   labelSkipHeight={12}
                   labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
+                  tooltip={({ id, value, color, data }) => (
+                    <strong>
+                        {"Start Date"}: {addToStartDate(data.start)}<br/>                      
+                        {"End Date"}: {addToStartDate(data.start+value)}<br/>                                              
+                        {"Number of Days"}: {value}
+                    </strong>
+                  )}                  
                   animate={true}
                   motionStiffness={90}
                   motionDamping={15}
